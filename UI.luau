@@ -20,7 +20,7 @@ local PlayerTab = Window:Tab({
 
 PlayerTab:Select()
 
-local Toggle = Tab:Toggle({
+local Toggle = PlayerTab:Toggle({
     Title = "Toggle",
     Desc = "Toggle Description",
     Icon = "bird",
