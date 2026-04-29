@@ -1,4 +1,5 @@
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+local g = getgenv()
 
 local Window = WindUI:CreateWindow({
     Title = "Mercury",
@@ -25,7 +26,7 @@ local Toggle = PlayerTab:Toggle({
     Desc = "Toggle Description",
     Icon = "bird",
     Type = "Checkbox",
-    Value = configs.player.walktog, -- default value
+    Value = g.config.player.walktog, -- default value
     Callback = function(state) 
         print("Toggle Activated" .. tostring(state))
     end
